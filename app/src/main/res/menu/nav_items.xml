@@ -8,6 +8,9 @@
     <item android:title="@string/nav_event"
         android:icon="@drawable/baseline_event_white_24dp"
         android:id="@+id/nav_event" />
+    <item android:title="@string/nav_project"
+        android:icon="@drawable/baseline_work_white_24dp"
+        android:id="@+id/nav_project" />
     <item android:title="@string/nav_loker"
         android:icon="@drawable/baseline_work_white_24dp"
         android:id="@+id/nav_loker" />

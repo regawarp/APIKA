@@ -23,22 +23,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Buka Bersama"
-                android:textSize="12pt"
+                android:textSize="18sp"
                 android:fontFamily="Arial"
                 android:layout_marginBottom="5dp"/>
-            <TextView
-                android:id="@+id/tanggal"
+            <View
+                android:id="@+id/line"
                 android:layout_below="@id/judul"
                 android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cardview_dark_background"/>
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_below="@id/line"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="6pt"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
                 android:text="28 Mei 2018 / 07:00 PM"/>
             <TextView
                 android:id="@+id/tempat"
                 android:layout_below="@id/tanggal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="6pt"
+                android:textSize="12sp"
                 android:text="Politeknik Negeri Bandung"/>
             <Button
                 android:layout_width="wrap_content"
