@@ -12,30 +12,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\27.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="27.0.3"
-        sha1="59cbbfb2937ebed98c8bb8882b7112d16358014e">
-        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-27.0.1_c29e71e1bfef8b1969d07080064fe498a834f232.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\27.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="27.0.1"
         sha1="69f7591c9ff9238ff226e264c0260bb9f1ce0029">
         <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-27.0.1_ae2f98e810e1e19329cb8446b047216c90eeff72.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Regawa\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.0\e414a4cb28434e25c4f6aa71426eb20cf4874ae9\common-1.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="27.0.1"
-        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
-        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\common-1.0.0_af679e20a1666c1ffcc4f163c1ea8b28432dff1f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -48,15 +30,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\support-compat\27.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="27.0.1"
-        sha1="91dae39a5cc837ad2a829c0dc69c57ab8d69d22b">
-        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-27.0.1_353d3605a9f81d48cfc53be466c8381b465ae96c.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\27.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -66,39 +39,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\transition\27.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="27.0.1"
-        sha1="dc703c35f594398c269b79b0178c86744add9494">
-        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-transition-27.0.1_0a4b3842836f61911207f28a9190ebb89888a023.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\27.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="27.0.3"
         sha1="d928394035bd4f7d2ee9e1c63d45f9ec088e21a4">
         <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-27.0.1_cdffba30f1835bb1c984274e265653218c53ea6f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\design\27.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="27.0.1"
-        sha1="f25b1adab1e4b4f5cecb9dc6f19798afabcb177b">
-        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-design-27.0.1_14096bf2f76c5575da1d80c2a1ee97637c25ad7e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\27.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="27.0.1"
-        sha1="59cbbfb2937ebed98c8bb8882b7112d16358014e">
-        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-27.0.1_c29e71e1bfef8b1969d07080064fe498a834f232.jar" />
     </item>
     <item
         is-multidex="false"
@@ -120,24 +66,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\27.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="27.0.1"
-        sha1="d4f9ace23785adf79a174d569bde261f032e1190">
-        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-27.0.1_922070fb74bd13cde8d85daac1b0f3278a405089.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\27.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="27.0.1"
-        sha1="d928394035bd4f7d2ee9e1c63d45f9ec088e21a4">
-        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-27.0.1_cdffba30f1835bb1c984274e265653218c53ea6f.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\27.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -153,6 +81,78 @@
         revision="27.0.1"
         sha1="f8a80c9882b064f2943e10649a8d2b249f5bf176">
         <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-27.0.1_63e224e902506dec3eddabc41eacab119237b49f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\27.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="59cbbfb2937ebed98c8bb8882b7112d16358014e">
+        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-27.0.1_c29e71e1bfef8b1969d07080064fe498a834f232.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Regawa\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.0\e414a4cb28434e25c4f6aa71426eb20cf4874ae9\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\common-1.0.0_af679e20a1666c1ffcc4f163c1ea8b28432dff1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\support-compat\27.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="91dae39a5cc837ad2a829c0dc69c57ab8d69d22b">
+        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-27.0.1_353d3605a9f81d48cfc53be466c8381b465ae96c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\transition\27.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="dc703c35f594398c269b79b0178c86744add9494">
+        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-transition-27.0.1_0a4b3842836f61911207f28a9190ebb89888a023.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\design\27.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="f25b1adab1e4b4f5cecb9dc6f19798afabcb177b">
+        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-design-27.0.1_14096bf2f76c5575da1d80c2a1ee97637c25ad7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\27.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="59cbbfb2937ebed98c8bb8882b7112d16358014e">
+        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-27.0.1_c29e71e1bfef8b1969d07080064fe498a834f232.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\27.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="d4f9ace23785adf79a174d569bde261f032e1190">
+        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-27.0.1_922070fb74bd13cde8d85daac1b0f3278a405089.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APIKA2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\27.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="d928394035bd4f7d2ee9e1c63d45f9ec088e21a4">
+        <dex dex="D:\APIKA2\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-27.0.1_cdffba30f1835bb1c984274e265653218c53ea6f.jar" />
     </item>
     <item
         is-multidex="false"

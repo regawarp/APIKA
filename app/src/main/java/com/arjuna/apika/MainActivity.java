@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private EventFragment eventFragment;
     private LokerFragment lokerFragment;
     private ProfileFragment profileFragment;
+    private ProjectFragment projectFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         eventFragment=new EventFragment();
         lokerFragment=new LokerFragment();
         profileFragment=new ProfileFragment();
+        projectFragment= new ProjectFragment();
+
         setFragment(homeFragment);
         mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -50,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     case R.id.nav_profile:
                         setFragment(profileFragment);
+                        return true;
+                    case R.id.nav_project:
+                        setFragment(projectFragment);
                         return true;
                     default:
                         return false;

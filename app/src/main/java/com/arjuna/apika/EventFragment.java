@@ -61,5 +61,6 @@ public class EventFragment extends Fragment {
         events.add(new Event("Meet n Greet", "28 Mei 2018 / 05:00 PM", "Polban"));
         events.add(new Event("Makrab", "28 Mei 2018 / 05:00 PM", "Ngopi Doeloe"));
         events.add(new Event("Gowes", "28 Mei 2018 / 05:00 PM", "Dago"));
+        events.add(new Event("Seminar APIKA", "28 Mei 2018 / 05:00 PM", "Pendopo Tony Soewandito"));
     }
 }
