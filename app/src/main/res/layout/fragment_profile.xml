@@ -15,8 +15,8 @@
                 android:id="@+id/imgLandscape"
                 android:layout_alignParentTop="true"
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:src="@drawable/ga"
+                android:layout_height="150dp"
+                android:src="@drawable/beach_unsplash"
                 android:scaleType="centerCrop"
                 android:contentDescription="@string/img_landscape"/>
             <RelativeLayout
@@ -39,11 +39,12 @@
                             android:id="@+id/txtProfileName"
                             android:layout_alignParentTop="true"
                             android:textAlignment="center"
-                            android:layout_marginTop="60dp"
+                            android:layout_marginTop="55dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
-                            android:text="Jhon Doe"/>
+                            android:textStyle="bold"
+                            android:text="John Doe"/>
                         <TextView
                             android:id="@+id/txtOccupation"
                             android:layout_below="@id/txtProfileName"
@@ -51,6 +52,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="17sp"
                             android:textAlignment="center"
+                            android:textStyle="bold"
                             android:text="CTO at Arjuna Creative Studio"/>
                         <TextView
                             android:id="@+id/txtLocation"
@@ -58,6 +60,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="14sp"
+                            android:layout_marginTop="10dp"
                             android:textAlignment="center"
                             android:text="Bandung, West Java, Indonesia"/>
                         <TextView
@@ -66,6 +69,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textAlignment="center"
+                            android:layout_marginTop="10dp"
                             android:textSize="12sp"
                             android:text="This is my biography. I wrote something interesting here. Please read carefully."/>
                     </RelativeLayout>
@@ -190,20 +194,32 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/jobHistory"
                     android:layout_below="@id/profileStat"
                     android:layout_marginTop="6dp"
                     android:layout_marginBottom="6dp"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp">
+                    android:layout_height="wrap_content">
                     <!--TODO Create recyclerView for Job Timeline-->
                     <LinearLayout
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="3dp"
+                            android:textStyle="bold"
+                            android:text="Job History"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorLightGrey"/>
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="50dp"
                             android:gravity="center_vertical" >
 
                             <RelativeLayout
@@ -226,14 +242,32 @@
                                     android:background="@drawable/dot" />
                             </RelativeLayout>
 
-                            <TextView
-                                android:id="@+id/textView1"
+                            <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dp"
-                                android:padding="20dp"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="2018 - now CTO at Arjuna Creative Studio"/>
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/positionYear"
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="8dp"
+                                    android:text="2018 - now"/>
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="6dp"
+                                    android:textSize="15sp"
+                                    android:gravity="center_vertical"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="CTO at Arjuna Creative Studio"/>
+
+                            </LinearLayout>
 
                         </LinearLayout>
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -262,14 +296,56 @@
                             </RelativeLayout>
 
                             <TextView
+                                android:id="@+id/positionYear2"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="8dp"
+                                android:text="2007 - 2018"/>
+
+                            <TextView
                                 android:id="@+id/textView2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dp"
-                                android:padding="20dp"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="6dp"
+                                android:textSize="15sp"
+                                android:gravity="center_vertical"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Foo at Lorem Ipsum"/>
 
                         </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/profileSkill"
+                    android:layout_below="@id/jobHistory"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="3dp"
+                            android:textStyle="bold"
+                            android:text="Skills"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorLightGrey"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Web Design, Android Dev, UI/UX"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </RelativeLayout>
