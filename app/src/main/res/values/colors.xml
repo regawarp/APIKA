@@ -7,4 +7,11 @@
     <color name="colorWhite">#FFF</color>
     <color name="colorwhiteTransparent">#80FFFFFF</color>
     <color name="colorLightGrey">#eeeeee</color>
+
+    <!-- APIKA logo colors -->
+    <color name="colorApikaRed">#b71c1c</color>
+    <color name="colorApikaGreen">#1b5e20</color>
+    <color name="colorApikaYellow">#f9a825</color>
+    <color name="colorApikaBlue">#01579b</color>
+    <color name="colorApikaMainBlue">#1a237e</color>
 </resources>
