@@ -6,7 +6,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.arjuna.apika.Event;
@@ -30,6 +32,7 @@ public class EventRVAdapter extends RecyclerView.Adapter<EventRVAdapter.EventVie
 
         protected CardView cardView;
         protected TextView mJudul, mTanggal, mTempat;
+        protected Button mBtnDetail;
 
         public EventViewHolder(View itemView) {
             super(itemView);
@@ -37,6 +40,7 @@ public class EventRVAdapter extends RecyclerView.Adapter<EventRVAdapter.EventVie
             mJudul=(TextView)itemView.findViewById(R.id.judul);
             mTanggal=(TextView)itemView.findViewById(R.id.tanggal);
             mTempat=(TextView)itemView.findViewById(R.id.tempat);
+            mBtnDetail=(Button)itemView.findViewById(R.id.btn_event_detail);
         }
     }
 
@@ -48,10 +52,16 @@ public class EventRVAdapter extends RecyclerView.Adapter<EventRVAdapter.EventVie
     }
 
     @Override
-    public void onBindViewHolder(EventViewHolder holder, int position) {
+    public void onBindViewHolder(EventViewHolder holder, final int position) {
         holder.mJudul.setText(events.get(position).getJudul());
         holder.mTanggal.setText(events.get(position).getTanggal());
         holder.mTempat.setText(events.get(position).getTempat());
+        holder.mBtnDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), "Go to Detail "+events.get(position).getJudul(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
