@@ -42,9 +42,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".IkaProfileActivity"
-            android:theme="@style/BackTheme"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".IkaProfileActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/BackTheme" />
+        <activity
+            android:name=".EventDetailActivity"
+            android:theme="@style/BackTheme" />
+        <activity
+            android:name=".ProjectDetailActivity"
+            android:theme="@style/BackTheme" />
     </application>
 
 </manifest>

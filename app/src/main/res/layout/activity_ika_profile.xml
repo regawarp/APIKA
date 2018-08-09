@@ -10,10 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.arjuna.apika.IkaProfileActivity">
 
+    <ImageView
+        android:id="@+id/logo_IKA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="logo IKA"
+        android:src="@drawable/dylan_unsplash" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textAlignment="gravity"
-        android:text="This is Ika Profile"/>
-
+        android:layout_below="@id/logo_IKA"
+        android:text="This is Ika Profile"
+        android:textAlignment="gravity" />
 </RelativeLayout>

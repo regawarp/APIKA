@@ -31,23 +31,26 @@ public class ProjectFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_project, container, false);
+        View view = inflater.inflate(R.layout.fragment_project, container, false);
 
-        recyclerView=(RecyclerView)view.findViewById(R.id.rv_project);
+        recyclerView = (RecyclerView) view.findViewById(R.id.rv_project);
 
-        LinearLayoutManager layoutManager=new LinearLayoutManager(getContext());
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         initializeData();
-        ProjectRVAdapter projectRVAdapter= new ProjectRVAdapter(projectList);
+        ProjectRVAdapter projectRVAdapter = new ProjectRVAdapter(projectList);
         recyclerView.setAdapter(projectRVAdapter);
 
         return view;
     }
 
     private void initializeData() {
-        projectList=new ArrayList<>();
-        projectList.add(new Project("Project Satu","2 months","This is Project Satu","3 days ago","Auctioner 1", "Budget: IDR 100.000.000 - 120.000.000"));
-        projectList.add(new Project("Project Dua","4 months","This is Project Dua","15 days ago","Auctioner 2", "Bugdget: IDR 30.000.000 - 40.000.000"));
-        projectList.add(new Project("Project Tiga","5 months","This is Project Tiga","7 days ago","Auctioner 3", "Budget: IDR 20.500.0000 - 30.000.000"));
+        projectList = new ArrayList<>();
+        projectList.add(new Project("Project Satu", "2 months", "This is Project Satu", "3 days ago",
+                "Auctioner 1", "Budget: IDR 100.000.000 - 120.000.000"));
+        projectList.add(new Project("Project Dua", "4 months", "This is Project Dua", "15 days ago",
+                "Auctioner 2", "Bugdget: IDR 30.000.000 - 40.000.000"));
+        projectList.add(new Project("Project Tiga", "5 months", "This is Project Tiga", "7 days ago",
+                "Auctioner 3", "Budget: IDR 20.500.0000 - 30.000.000"));
     }
 }

@@ -1,6 +1,7 @@
 package com.arjuna.apika.adapter;
 
-import android.app.usage.UsageEvents;
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,8 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import com.arjuna.apika.Event;
+import com.arjuna.apika.EventDetailActivity;
 import com.arjuna.apika.R;
 
 import java.util.List;
@@ -23,12 +24,13 @@ import java.util.List;
 public class EventRVAdapter extends RecyclerView.Adapter<EventRVAdapter.EventViewHolder> {
 
     List<Event> events;
+    Context context;
 
-    public EventRVAdapter(List<Event> events){
-        this.events=events;
+    public EventRVAdapter(List<Event> events) {
+        this.events = events;
     }
 
-    public static class EventViewHolder extends RecyclerView.ViewHolder{
+    public static class EventViewHolder extends RecyclerView.ViewHolder {
 
         protected CardView cardView;
         protected TextView mJudul, mTanggal, mTempat;
@@ -36,11 +38,11 @@ public class EventRVAdapter extends RecyclerView.Adapter<EventRVAdapter.EventVie
 
         public EventViewHolder(View itemView) {
             super(itemView);
-            cardView=(CardView)itemView.findViewById(R.id.cv_event);
-            mJudul=(TextView)itemView.findViewById(R.id.judul);
-            mTanggal=(TextView)itemView.findViewById(R.id.tanggal);
-            mTempat=(TextView)itemView.findViewById(R.id.tempat);
-            mBtnDetail=(Button)itemView.findViewById(R.id.btn_event_detail);
+            cardView = (CardView) itemView.findViewById(R.id.cv_event);
+            mJudul = (TextView) itemView.findViewById(R.id.judul);
+            mTanggal = (TextView) itemView.findViewById(R.id.tanggal);
+            mTempat = (TextView) itemView.findViewById(R.id.tempat);
+            mBtnDetail = (Button) itemView.findViewById(R.id.btn_event_detail);
         }
     }
 
@@ -48,6 +50,7 @@ public class EventRVAdapter extends RecyclerView.Adapter<EventRVAdapter.EventVie
     public EventViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_event, parent, false);
         EventViewHolder eventViewHolder = new EventViewHolder(v);
+        context = parent.getContext();
         return eventViewHolder;
     }
 
@@ -59,7 +62,12 @@ public class EventRVAdapter extends RecyclerView.Adapter<EventRVAdapter.EventVie
         holder.mBtnDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "Go to Detail "+events.get(position).getJudul(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, EventDetailActivity.class);
+                intent.putExtra("event_judul", events.get(position).getJudul());
+                intent.putExtra("event_tanggal", events.get(position).getTanggal());
+                intent.putExtra("event_tempat", events.get(position).getTempat());
+                context.startActivity(intent);
+                Toast.makeText(v.getContext(), "Go to Detail " + events.get(position).getJudul(), Toast.LENGTH_SHORT).show();
             }
         });
     }
